@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active: was1
+
+#test was1
+---
+spring:
+  config:
+    activate:
+      on-profile: was1
+
+welcome:
+  string: Running in was-1
+
+#test was2
+---
+spring:
+  config:
+    activate:
+      on-profile: was2
+
+welcome:
+  string: Running in was-2
